@@ -1,6 +1,6 @@
 print("Welcome to this tip calculator.")
-billing = int(input("What was the total bill? "))
+bills = int(input("What was the total bill? "))
 tip = float(input("How much tip would you like to give? 10, 12, or 15? "))
 no_of_pple_t0_split_with = int(input("How many people to split the bill? "))
-Amount_to_pay = ((tip/100) * billing + billing)/no_of_pple_t0_split_with
+Amount_to_pay = ((tip/100) * bills + bills)/no_of_pple_t0_split_with
 print("Each person should pay: {: .2f}" .format(Amount_to_pay))
