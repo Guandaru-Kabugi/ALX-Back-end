@@ -3,7 +3,7 @@ import requests
 from weather_retrieval import weather_data
 
 BASE_URl = "https://api.openweathermap.org/data/2.5/weather?" #we create a base url that is present on the website
-API_KEY = "3ec8406738737a8dbc88cf36d1b89987"
+API_KEY = open('apikey.py', 'r').read()
 CITY = "Nairobi"
 
 url = BASE_URl +"appid=" + API_KEY + "&q=" + CITY
