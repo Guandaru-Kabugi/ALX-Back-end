@@ -3,3 +3,13 @@ it should have attributes firstname, lastname, pay
 it should have two methods: a fullname method and pay raise application
 then you should create two instances of the class
 later, you will create a function for individual subclasses to inherit from the parent class(employee)
+
+
+
+create a class called person
+create a subclass called student
+create a subclass called undergraduate
+
+parent class will have method of enrolling and also attributes of name and age
+student will have attributes studentid as an addition and the enrol method
+undgraduate will have attributes major as an addition and the enrol method

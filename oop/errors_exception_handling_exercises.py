@@ -44,12 +44,15 @@ class ValueTooHighError(Exception):
         
     def __str__(self) -> str:
         return f"The number, {self.no}, is too high "
-
-try:
-    guess = int(input("Guess a number: "))
-    if guess > 100:
-        raise ValueTooHighError(guess)
-except ValueTooHighError as e:
-    print (e)
-else:
-    print("well done on your effort") 
+while True:
+    
+    try:
+        guess = int(input("Guess a number: "))
+        if guess > 100:
+            raise ValueTooHighError(guess)
+    except ValueTooHighError as e:
+        print (e)
+    except ValueError:
+        print("Enter an Integer")
+    else:
+        print("well done on your effort") 
