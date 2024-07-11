@@ -1,0 +1,5 @@
+create a class employee
+it should have attributes firstname, lastname, pay
+it should have two methods: a fullname method and pay raise application
+then you should create two instances of the class
+later, you will create a function for individual subclasses to inherit from the parent class(employee)
