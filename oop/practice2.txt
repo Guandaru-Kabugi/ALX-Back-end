@@ -13,3 +13,16 @@ create a subclass called undergraduate
 parent class will have method of enrolling and also attributes of name and age
 student will have attributes studentid as an addition and the enrol method
 undgraduate will have attributes major as an addition and the enrol method
+
+personal challenge #1
+
+1. Generate a random integer
+2. Ask user to guess a number within a certain range
+3. give the user 5 attempts for hard and 10 attempts for easy
+4. Deduct attempts until none is left and tell the user they have run out of attempts.
+5. If they get it right, tell them well done
+6. consider using try and except for practice
+7. If possible, also use unittesting.
+
+
+personal challenge #2
