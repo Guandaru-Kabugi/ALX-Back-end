@@ -28,8 +28,12 @@ def main ():
                     print("Input a string of characters", e)
             case '2':
                 try:
-                    course_name_to_be_removed = input("Type name of the course you want removed: ").title()
-                    student.remove_course(course_name_to_be_removed)
+                    student_name = input("What is your first and last name?: ")
+                    if student_name in student.enrolledsetudents:
+                        course_name_to_be_removed = input("Type name of the course you want removed: ").title()
+                        student.remove_course(course_name_to_be_removed)
+                    elif not student_name in student.enrolledsetudents:
+                        raise ValueError("Your name is not in the enrolled list")
                 except ValueError as e:
                     print(e)
             case '3':
